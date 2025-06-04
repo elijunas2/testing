@@ -1,0 +1,139 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    color: #FF5C00;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+#nav-menu.show {
+    display: block;
+}
+#nav-menu a {
+    padding: 0.5rem 1rem;
+}
+#nav-menu a.active {
+    color: #FF5C00;
+    font-weight: bold;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.cta {
+    background: #FF5C00;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.hero {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+.grid-item {
+    background: #111;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.grid-item h3 {
+    color: #FF5C00;
+    margin-bottom: 1rem;
+}
+.grid-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.grid-item ul li::before {
+    content: "\2713";
+    color: #FF5C00;
+    margin-right: 0.5rem;
+}
+.bottom-cta {
+    text-align: center;
+    padding: 2rem;
+}
+.footer {
+    background: #000;
+    text-align: center;
+    color: #999;
+    padding: 2rem;
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    #nav-menu {
+        display: none;
+    }
+    #nav-menu.show {
+        display: block;
+    }
+    #nav-menu ul {
+        flex-direction: column;
+        background: #000;
+    }
+    .nav-right {
+        display: none;
+    }
+}
