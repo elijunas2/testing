@@ -3,28 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dirbtinio Intelekto Mokymai</title>
+    <title>WHY AI - Praktiniai AI mokymai</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Dirbtinio Intelekto Mokymai</h1>
+    <header class="navbar">
+        <div class="logo">WHY AI</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="about.html">Apie</a></li>
+                <li><a href="index.html" class="active">Mokymai</a></li>
+                <li><a href="#">Bendruomenė</a></li>
+                <li><a href="#">Parduotuvė</a></li>
+                <li><a href="#">Blogas</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="nav-right">
+            <a href="#" class="lang-switch">EN</a>
+            <span class="cart-icon">&#128722;</span>
+            <a href="#" class="cta">KONSULTACIJA</a>
+        </div>
     </header>
-    <nav id="nav">
-        <ul>
-            <li><a href="index.html">Pradžia</a></li>
-            <li><a href="courses.html">Kursai</a></li>
-            <li><a href="about.html">Apie mus</a></li>
-            <li><a href="contact.html">Kontaktai</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Sveiki atvykę!</h2>
-        <p>Šioje svetainėje rasite informaciją apie mūsų siūlomus dirbtinio intelekto mokymus.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 DI Mokymai</p>
+
+    <section class="hero">
+        <h1>Praktiniai dirbtinio intelekto mokymai</h1>
+        <p>Sužinokite, kaip AI transformuoja pasaulį ir jūsų karjerą. Įgykite praktinių įgūdžių ir pasitikėjimo naudodami inovatyvias technologijas.</p>
+    </section>
+
+    <section class="grid">
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/200x200/FF5C00/000000?text=AI" alt="AI art portrait">
+            <h3>AI mokymai – įvadas į pagrindus</h3>
+            <p>Praktinės AI žinios ir geriausi šablonai.</p>
+            <ul>
+                <li>20 realių AI pritaikymo sričių.</li>
+                <li>Naujausios technologijų tendencijos.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/200x200/FFD700/000000?text=AI" alt="AI portrait">
+            <h3>AI mokymai – personalizuotos dirbtuvės</h3>
+            <p>Asmeniškai pritaikytas turinys. 95 % mokymų – realūs pavyzdžiai ir užduotys.</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/200x200/00AEEF/000000?text=AI" alt="AI glasses portrait">
+            <h3>AI hakatonas verslams ir įmonėms</h3>
+            <p>AI sprendimai rinkodarai, pardavimams, HR. Praktika – AI integracija į verslo procesus. Šablonai, konsultacijos, naujausias turinys.</p>
+        </div>
+    </section>
+
+    <section class="bottom-cta">
+        <a href="#" class="cta">KONSULTACIJA</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 WHY AI</p>
     </footer>
 </body>
 </html>

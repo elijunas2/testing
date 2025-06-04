@@ -1,8 +1,4 @@
 function toggleMenu() {
-  var nav = document.getElementById('nav');
-  if (nav.className === 'responsive') {
-    nav.className = '';
-  } else {
-    nav.className = 'responsive';
-  }
+  const nav = document.getElementById('nav-menu');
+  nav.classList.toggle('show');
 }
